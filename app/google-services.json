@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "683066078330",
+    "firebase_url": "https://ictis-database-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ictis-database",
+    "storage_bucket": "ictis-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683066078330:android:251f871a1a5ca2b7cf77c3",
+        "android_client_info": {
+          "package_name": "com.example.adminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683066078330-810ujc4qiil1pssd9r6mubkchilamcjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPNLupCltzZGdaJEWzDHmFYEOg7I1Ak9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683066078330-810ujc4qiil1pssd9r6mubkchilamcjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683066078330:android:694bcd0a55413046cf77c3",
+        "android_client_info": {
+          "package_name": "com.example.ictis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683066078330-b1k3gh7m6l8i4scp2v6oa6ttia97br7o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ictis",
+            "certificate_hash": "647c4c925c0d834f608af00ed0211d9f1d774af3"
+          }
+        },
+        {
+          "client_id": "683066078330-810ujc4qiil1pssd9r6mubkchilamcjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPNLupCltzZGdaJEWzDHmFYEOg7I1Ak9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683066078330-810ujc4qiil1pssd9r6mubkchilamcjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683066078330:android:7116270e3f9c097fcf77c3",
+        "android_client_info": {
+          "package_name": "com.example.ictisadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "683066078330-810ujc4qiil1pssd9r6mubkchilamcjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPNLupCltzZGdaJEWzDHmFYEOg7I1Ak9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "683066078330-810ujc4qiil1pssd9r6mubkchilamcjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title=""
+        android:id="@+id/InfoBlocks"
+        android:icon="@drawable/bn3"/>
+    <item android:title=""
+        android:id="@+id/Map"
+        android:icon="@drawable/bn2"/>
+    <item android:title=""
+        android:id="@+id/Profile"
+        android:icon="@drawable/bn1"/>
+</menu>
