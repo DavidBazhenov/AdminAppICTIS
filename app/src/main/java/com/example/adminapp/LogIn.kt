@@ -24,10 +24,10 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-
 class LogIn : AppCompatActivity() {
     lateinit var launcher: ActivityResultLauncher<Intent>
     private lateinit var auth: FirebaseAuth
+    var mode: Int?=0
     lateinit var binding: ActivityLogInBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,6 +62,7 @@ class LogIn : AppCompatActivity() {
         binding.GoogleSignInButton.setOnClickListener{
             SignInGoogle()
         }
+
         checkautorization()
         /*findViewById<ImageButton>(R.id.guest).setOnClickListener {
             startActivity(Intent(this, MainMenu::class.java))
