@@ -21,49 +21,65 @@ android:paddingRight="13dp">
     app:layout_constraintTop_toTopOf="parent"
     tools:layout_editor_absoluteX="0dp" />
 
-<TextView
-    android:id="@+id/textView5"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="2dp"
-    android:background="@drawable/blocktext"
-    android:fontFamily="@font/philosopher"
-    android:paddingLeft="14dp"
-    android:paddingRight="14dp"
-    android:textColor="#050505"
-    android:textSize="16sp"
-    app:layout_constraintTop_toBottomOf="@+id/textView4"
-    tools:layout_editor_absoluteX="0dp" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/blocktext"
+        android:fontFamily="@font/philosopher"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="13dp" />
 
-<TextView
-    android:id="@+id/textView6"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="2dp"
-    android:layout_marginBottom="15dp"
-    android:background="@drawable/buttonpic"
-    android:fontFamily="@font/philosopher"
-    android:gravity="center"
-    android:paddingLeft="14dp"
-    android:paddingRight="14dp"
-    android:text="Добавить картинку"
-    android:textColor="#050505"
-    android:textSize="16sp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView7"
-    tools:layout_editor_absoluteX="0dp" />
+    <TextView
+        android:id="@+id/textViewedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonpic"
+        android:fontFamily="@font/philosopher"
+        android:gravity="center"
+        android:text="Изменить текст"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="16dp" />
 
-<TextView
-    android:id="@+id/textView7"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="15dp"
-    android:fontFamily="@font/philosopher"
-    android:paddingLeft="14dp"
-    android:paddingRight="14dp"
-    android:text="Поле для картинки:"
-    android:textColor="#050505"
-    android:textSize="16sp"
-    app:layout_constraintTop_toBottomOf="@+id/textView5"
-    tools:layout_editor_absoluteX="16dp" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttonpic"
+        android:fontFamily="@font/philosopher"
+        android:gravity="center"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="Добавить картинку"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/philosopher"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="Поле для картинки:"
+        android:textColor="#050505"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewedittext" />
 </androidx.constraintlayout.widget.ConstraintLayout>

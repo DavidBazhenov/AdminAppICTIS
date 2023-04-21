@@ -47,22 +47,51 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="12dp"
             android:background="@drawable/del"
-            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="19dp"
+            android:layout_marginEnd="12dp"
             android:background="@drawable/edi"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/applybutton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/apply"
+            android:visibility="gone"
             app:layout_constraintEnd_toStartOf="@+id/imageButton2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints"/>
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rectanglenewb"
+            android:fontFamily="@font/philosopher_bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#050505"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton"
+            app:layout_constraintVertical_bias="1.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -92,7 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcView"
@@ -102,23 +131,6 @@
         </androidx.recyclerview.widget.RecyclerView>
 
     </FrameLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:background="@drawable/rectanglenewb"
-        android:fontFamily="@font/philosopher_bold"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textColor="#050505"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

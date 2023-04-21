@@ -91,6 +91,7 @@ class MainActivity : AppCompatActivity(), MainMenuAdapter.Listener {
         //Toast.makeText(this, "--> ${stat.title}", Toast.LENGTH_LONG).show()
         val myIntent = Intent(this@MainActivity, StatBlock::class.java)
         myIntent.putExtra("name", stat.id)
+        myIntent.putExtra("mode", "1")
         this@MainActivity.startActivity(myIntent)
     }
 }

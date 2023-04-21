@@ -1,10 +1,12 @@
 package com.example.adminapp
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.adminapp.databinding.StateblockBinding
+import com.squareup.picasso.Picasso
 
 class StatblockAdapter(val listener: Listener): RecyclerView.Adapter<StatblockAdapter.StatHolder>() {
     val statlist = ArrayList<SatBlockData>()
@@ -12,6 +14,7 @@ class StatblockAdapter(val listener: Listener): RecyclerView.Adapter<StatblockAd
         val binding = StateblockBinding.bind(item)
         fun bind(satBlockData: SatBlockData, listener: Listener) = with(binding){
             textView5.text = satBlockData.title
+            Picasso.get().load(satBlockData.imgurl).into(imageView3)
             itemView.setOnClickListener{
                 listener.onClick(satBlockData)
             }
@@ -31,6 +34,8 @@ class StatblockAdapter(val listener: Listener): RecyclerView.Adapter<StatblockAd
         return statlist.size
     }
     fun addblock(statBlockData: SatBlockData){
+
+        println("Block added")
         statlist.add(statBlockData)
         notifyDataSetChanged()
     }

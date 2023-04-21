@@ -13,6 +13,13 @@
         android:theme="@style/Theme.AdminApp"
         tools:targetApi="31">
         <activity
+            android:name=".EditTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addpictureactivity"
+            android:exported="false"
+            android:parentActivityName=".StatBlock" />
+        <activity
             android:name=".NewStatActivity"
             android:exported="false" />
         <activity

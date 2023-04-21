@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_signin_background"
-    >
+    tools:context=".NewStatActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -31,7 +31,7 @@
             android:id="@+id/imageButton9"
             android:layout_width="51dp"
             android:layout_height="51dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="16dp"
             android:background="#00000000"
             android:src="@drawable/arr"
             app:layout_constraintStart_toStartOf="parent"
@@ -48,16 +48,87 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="192dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="131dp"
+            android:background="@drawable/buttonnikita"
+            android:ems="10"
+            android:fontFamily="@font/philosopher"
+            android:gravity="center|left"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword3"
+            android:layout_width="192dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="131dp"
+            android:background="@drawable/buttonnikita"
+            android:ems="10"
+            android:fontFamily="@font/philosopher"
+            android:gravity="center|left"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="307dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="52dp"
+            android:fontFamily="@font/philosopher"
+            android:text="Введите название блока"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="307dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="52dp"
+            android:fontFamily="@font/philosopher"
+            android:text="Введите название статьи"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="185dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="73dp"
+            android:layout_marginStart="134dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="124dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3"
             app:srcCompat="@drawable/continuebutt" />
 
         <TextView

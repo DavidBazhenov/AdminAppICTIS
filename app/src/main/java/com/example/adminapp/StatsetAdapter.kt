@@ -11,8 +11,11 @@ class StatsetAdapter(val listener: Listener): RecyclerView.Adapter<StatsetAdapte
         val binding = StatyablockBinding.bind(item)
         fun bind(statyaSet: StatyaSet, listener: Listener) = with(binding){
             textView5.text = statyaSet.title
-            itemView.setOnClickListener{
-                listener.onClick(statyaSet)
+            textViewedittext.setOnClickListener{
+                listener.onClick(statyaSet, 1)
+            }
+            textView6.setOnClickListener{
+                listener.onClick(statyaSet, 2)
             }
         }
     }
@@ -32,6 +35,6 @@ class StatsetAdapter(val listener: Listener): RecyclerView.Adapter<StatsetAdapte
         notifyDataSetChanged()
     }
     interface  Listener{
-        fun onClick(statyaSet: StatyaSet)
+        fun onClick(statyaSet: StatyaSet, i: Int)
     }
 }
